@@ -1,0 +1,7 @@
+domain: davidamick.com
+repo: github.com/snarlysodboxer/networkPolicyDNSEgress
+resources:
+- group: crd
+  kind: NetworkPolicyDNSEgress
+  version: v1
+version: "2"

@@ -1,0 +1,20 @@
+# permissions to do viewer networkpolicydnsegresses.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: networkpolicydnsegress-viewer-role
+rules:
+- apiGroups:
+  - crd.davidamick.com
+  resources:
+  - networkpolicydnsegresses
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - crd.davidamick.com
+  resources:
+  - networkpolicydnsegresses/status
+  verbs:
+  - get

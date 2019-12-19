@@ -1,0 +1,7 @@
+apiVersion: crd.davidamick.com/v1
+kind: NetworkPolicyDNSEgress
+metadata:
+  name: networkpolicydnsegress-sample
+spec:
+  # Add fields here
+  foo: bar
